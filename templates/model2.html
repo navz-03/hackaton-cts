@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="../static/model2.css">
+
+</head>
+
+<body>
+    <!-- Sandbox just for fun-->
+    <div class="big-circles">
+        <div class="big-circle"></div>
+        <div class="big-circle"></div>
+        <div class="big-circle"></div>
+    </div>
+    <section id="home">
+        <div class="slide-wrapper">
+            <div class="smallcircles">
+                <div class="small-circle"></div>
+                <div class="small-circle"></div>
+                <div class="small-circle"></div>
+                <div class="small-circle"></div>
+                <div class="small-circle"></div>
+                <div class="small-circle"></div>
+            </div>
+            <div class="cover-wrapper text-center" id="home-content">
+                <div class="cover-wrapper__inner">
+                    <div class="cover-wrapper__container">
+                        <h1 class="mb-5">Drug Development And Discovery</h1>
+                        <form action="/predict" method="POST">  
+                            <select class="input Enter_1 text_c" autocomplete="off" name="text" required="">
+                                <option value="Alzheimer">Alzheimer</option>
+                            </select>
+                            <br/>                   
+                                <input class="input Enter_1 mt-5 text_c" autocomplete="on" name="Smiles" type="text" required="" placeholder="Enter the Smiles">
+                                <p>
+                                    <button class="btn btn-light button_design mt-5 text-uppercase trigger" data-toggle="closed"><span>Predict Drug Interaction</span></button>
+                                </p>
+                        </form>
+                            <div class="description-box">
+                                {% if description %}
+                                    <h3>Description</h3>
+                                    <p>
+                                        {{ description }}
+                                    </p>
+                                 {% endif %}
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <script src="../static/model2.js"></script>
+</body>
+
+</html>

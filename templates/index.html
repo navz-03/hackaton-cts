@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Discovery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('https://previews.123rf.com/images/nexusplexus/nexusplexus1708/nexusplexus170803215/83695457-biotechnology-conceptual-background.jpg');
+            min-height: 100vh;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .image_1 {
+            height: 40px;
+            width: 140px;
+            padding-left: 40px;
+            display: flex-start;
+            align-items: space-between;
+            border-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .navigation a:hover {
+            color: #000;
+            border-color: black;
+            background-color: #0d3d7a;
+            
+        }
+
+        .navigation a.active {
+            background: #311b7e;
+            
+        }
+
+        .parallax {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #text {
+            position: absolute;
+            font-size: 6em;
+            color: white;
+            text-shadow: 6px 6px 6px rgba(0, 0, 0, .7);
+            text-align: center;
+        }
+
+        .sec {
+            position: relative;
+            background: #0d3d7a;
+            padding: 100px;
+        }
+
+        .sec h2 {
+            font-size: 3em;
+            color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .sec p {
+            font-size: 1em;
+            color: #f9f9f9;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">
+            <img src="https://mma.prnewswire.com/media/1794711/Cognizant_Logo.jpg?p=facebook" class="image_1" />
+        </h2>
+        <nav class="navigation">
+            <a href="/loginpage" class="active">Login</a>
+        </nav>
+    </header>
+    
+    <section class="parallax">
+        <h1 id="text">DRUG DISCOVERY AND DEVELOPMENT</h1>
+    </section>
+    <section class="sec">
+        <h2>Drug Discovery and Drug Interaction</h2>
+        <p>
+            <!-- Content here -->
+        </p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
